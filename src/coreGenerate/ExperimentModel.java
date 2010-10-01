@@ -46,9 +46,7 @@ public class ExperimentModel {
      * @param c
      */
     public void addCheck(ICheck c) {
-        //to be created
-        //ok let's test
-        //nono sorry
+
     }
 
     /**
