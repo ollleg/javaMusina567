@@ -14,9 +14,45 @@ import java.util.ArrayList;
 public class ExperimentModel {
     private ArrayList<ICheck> checkList;
 
+    /**
+     * The experiment table. It consists of the results of experiments. 
+     */
+    private double expTable [][];
+    private int N;
+    private int m;
+
     public void ExperimentModel(int N, int m) {
-        //constructor for the model
-                      
+        this.N = N;
+        this.m = m;
+        expTable = new double[N][];
+        for(int i=0;i<N;i++)
+            expTable[i] = new double[m];
+    }
+
+    /**
+     *
+     * @param N - The number of experiment
+     * @param m - The number of factor
+     * @return The result(y) of N experiment from m factor
+     */
+    public double getExperimentResult(int N, int m) {
+        return expTable[N][m];        
+    }
+
+    /**
+     *
+     * @return The number of experiments in the table.
+     */
+    public int getExperimentsCount(){
+        return N;
+    }
+
+    /**
+     *
+     * @return The number of factors.
+     */
+    public int getFactorsCount(){
+        return m;
     }
 
     /**

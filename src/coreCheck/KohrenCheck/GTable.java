@@ -15,6 +15,14 @@ public class GTable {
                                         new GTableRow(2,6,6161,0.05),
                                         new GTableRow(2,7,5612,0.05)};
 
+    /**
+     * Returns the element of the Kohrens G-Table.
+     * @param F1
+     * @param F2
+     * @param q
+     * @return The element of the G-Table
+     * @throws NoSuchFieldException
+     */
     public static int getG(int F1, int F2, double q) throws NoSuchFieldException {
         GTableRow row;
         for(int i=0;i<rows.length;i++) {
