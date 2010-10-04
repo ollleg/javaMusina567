@@ -1,5 +1,7 @@
 package coreGenerate;
 
+import coreCheck.ICheck;
+
 import java.util.ArrayList;
 
 /**
@@ -14,7 +16,7 @@ public class ExperimentModel {
 
     public void ExperimentModel(int N, int m) {
         //constructor for the model
-                      //     lets commit bnbjkb
+                      
     }
 
     /**
